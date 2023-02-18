@@ -1,0 +1,99 @@
+/* Global variable declarations, global settings, etc. */
+:root {
+  /* Global vars */
+  /* colours */
+  /* misc. */
+  --white: #fff;
+  --black: #000;
+
+  /* scheme */
+  --cs-backg1: #f2f6ff;
+  --cs-backg2: #dcf2f4;
+  --cs-backg3: #414f52;
+  --cs-foreg1: #0ccccf;
+  --cs-foreg2: #0cc1c4;
+  --cs-foreg3: #418dff;
+  --cs-accent: #0ca5c4;
+  --cs-dkfont: #000;
+  --cs-ltfont: #f2f6ff;
+
+  /* lengths */
+  --content-max-width: 650pt; /* maximum width of the central content block */
+}
+
+body {
+  /* Global settings */
+
+  /* Settings for the background */
+  background-color: var(--cs-backg1);
+
+  /* fonts */
+  font-family: "Fira Sans";
+  font-size: large;
+  color: var(--cs-dkfont);
+}
+
+.header {
+  /* header variables */
+  /* --items: 4; */
+  background-color: var(--cs-foreg3);
+
+  /* geometry */
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 1; */
+}
+
+/* Descendants of the header */
+.header a {
+  /* colour */
+  color: var(--cs-ltfont);
+  background-color: var(--backg);
+  font-weight: 500;
+
+  /* geometry */
+  /* text-align: center; */
+
+  /* animations */
+  /* transition-property: color, background-color;
+  transition-duration: 1s; */
+}
+
+/* .header a:hover {
+  background-color: var(--cs-foreg1);
+} */
+
+/* Centre div with most of the actual page content */
+.content {
+  /* colour */
+  background-color: var(--cs-backg2);
+
+  /* geometry */
+  max-width: var(--content-max-width);
+}
+
+.footer {
+  font-size: medium;
+  /* colour */
+  background-color: var(--cs-backg3);
+}
+
+/* Children of the footer */
+.footer > div > div {
+  /* colour */
+  color: var(--cs-ltfont);
+
+  /* animations */
+  transition-property: color, background-color;
+  transition-duration: 1s;
+}
+
+.footer > div > div > a {
+  /* colour */
+  color: var(--cs-ltfont);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
